@@ -7,7 +7,8 @@ form?.addEventListener("submit", (event) => {
     const newUser = {
         id: Date.now(),
         email,
-        password
+        password,
+        role: "client"
     };
     const usersStorage = localStorage.getItem("users");
     const users = usersStorage
